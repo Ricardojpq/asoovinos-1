@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: "Roboto",'Arial', sans-serif;
+    color: #333;
+    background-color: #f7fee7;
+    line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    font-weight: 700;
+}
+.navbar-brand {
+    color: rgb(54, 83, 20);
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9ecef;
+    padding: 25px 0;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 900 !important;
+}
+.hero img{
+    max-width: 120%;
+    height: auto;
+}
+
+.hero .btn-success {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.hero .btn-success:hover {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.hero .stars {
+    color: #f1c40f;
+}
+
+/* Consultation Section */
+.consultation {
+    background-color: #fff;
+}
+
+.consultation h2 {
+    color: #2c3e50;
+}
+
+.consultation .btn-success {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.consultation .btn-success:hover {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+/* pdf-viewer Section */
+.pdf-viewer {
+    background-color: #f4f6f7;
+}
+
+.pdf-viewer h2 {
+    color: #2c3e50;
+}
+
+.pdf-viewer {
+    min-height: 500px;
+    border: 1px solid #ddd;
+}
+
+.pdfContainer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+/* Eslogan Section */
+.eslogan {
+    background-color: #27ae60;
+}
+
+/* Misión Section */
+.mission {
+    background-color: #fff;
+}
+
+.mission h2 {
+    color: #2c3e50;
+}
+
+.mission ul li {
+    font-size: 1.1rem;
+}
+
+.mission img {
+    transition: transform 0.3s ease;
+}
+
+.mission img:hover {
+    transform: scale(1.05);
+}
+
+/* Visión Section */
+.vision {
+    background-color: #f4f6f7;
+}
+
+.vision h2 {
+    color: #2c3e50;
+}
+
+.vision-goals {
+    font-size: 1.1rem;
+}
+
+.vision-goals i {
+    transition: transform 0.3s ease;
+}
+
+.vision-goals .d-flex:hover i {
+    transform: scale(1.2);
+}
+
+.vision img {
+    transition: transform 0.3s ease;
+}
+
+.vision img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #27ae60;
+}
+
+.title-color{
+    color: rgb(26, 46, 5 );
+}
+.paragraph-color{
+    color: rgb(63, 98, 18);
+}
+
+.link-primary-custom{
+    color: rgb(63, 98, 18);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.link-primary-custom:hover{
+    color: rgb(26, 46, 5 );
+}
+
+
+.animal-query-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animal-query-form input,
+.animal-query-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animal-query-form input:focus,
+.animal-query-form select:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.animal-query-form button {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animal-query-form button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+}
+
+.animal-query-form button:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 480px) {
+    .animal-query-form {
+        padding: 1.5rem;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 30px;
+    }
+
+    .consultation, .pdf-viewer {
+        text-align: center;
+    }
+
+    .consultation img, .pdf-viewer img {
+        margin-bottom: 30px;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mejoras de UI/UX */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+
+input[type="text"] {
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.3);
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.05);
+}
