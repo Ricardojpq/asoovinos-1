@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pdfContainer.innerHTML = "";
       pdfContainer.classList.add("mx-auto");
       pdfContainer.style = "height:450px;";
-      iframe.src = "/assets/media/pdf/test.pdf";
+      iframe.src = "assets/media/pdf/test.pdf";
       pdfContainer.append(iframe);
     }, 1500);
   });
